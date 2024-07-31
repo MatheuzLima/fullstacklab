@@ -1,1 +1,13 @@
-.md
+#arquivos diretorio
+
+# * Qualquer coisa
+#Exemplo *.js pasta/*
+
+# ? Um caracter
+#Exemplo: ?cript.js
+
+# Intervalos [0-9] ou [a-z]
+#Exemplo: test-[0-9].html
+
+#excessao !
+#Exemplo: !style.css
