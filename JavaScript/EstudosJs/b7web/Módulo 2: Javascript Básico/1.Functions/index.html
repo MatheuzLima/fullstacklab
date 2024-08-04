@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #area-console {
+      background-color: darkkhaki;
+      padding: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+    }
+  </style>
+  <title>Introdução JS</title>
+</head>
+<body>
+  <div class="container">
+    <!-- <h1>Introdução JS</h1> -->
+    <div id="area-console">
+      <textarea 
+        name="console" 
+        id="console" 
+        cols="40" 
+        rows="15">
+        Console Output  
+      </textarea>
+      <button 
+        id="btn" 
+        onclick="gerar()">
+        Gerar Log
+      </button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

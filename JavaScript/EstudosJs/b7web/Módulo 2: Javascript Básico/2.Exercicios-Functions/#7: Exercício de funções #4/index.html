@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>#7: Exercício de funções #4</title>
+  <style>
+    #console {
+      width: 97%;
+      height: 300px;
+      background-color: #333;
+      color: #fff;
+      overflow-y: auto;
+      padding: 10px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Console Display</h1>
+  <div id="console"></div>
+<script>
+(function() {
+  const consoleElement = document.getElementById('console');
+
+  // Salvar uma referência ao console.log original
+  const originalConsoleLog = console.log;
+
+  // Sobrescrever console.log
+  console.log = function(message) {
+    // Chamar o console.log original
+    originalConsoleLog.apply(console, arguments);
+
+    // Adicionar a mensagem ao console do DOM
+    const messageElement = document.createElement('div');
+    messageElement.textContent = message;
+    consoleElement.appendChild(messageElement);
+
+    // Rolagem automática para o final
+    consoleElement.scrollTop = consoleElement.scrollHeight;
+  };
+
+  // Testar a função sobrescrita
+  console.log("Hello, this is a test message!");
+  console.log("Another message for the console!");
+})();
+//===========================
+//Calcular a porcentagem entre 2 numeros.
+function calcPct(n1, n2) {
+  return (n2 / n1) * 100;
+}
+let x = 40;
+let y = 10; 
+let pct = calcPct(x, y)
+console.log(`${pct}% de ${x} é ${y}`)
+</script>
+</body>
+</html>
