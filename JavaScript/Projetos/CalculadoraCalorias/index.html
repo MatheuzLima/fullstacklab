@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CalculadoraCalorias</title>
+</head>
+<body>
+    <form id="imcForm">
+        <div class="container">
+            <div class="box-calc">
+                <div class="box-weight">
+                    <label for="weight">Peso: </label>
+                    <input type="number" id="weight" placeholder="Digite seu peso" required>
+                </div>
+                <div class="box-height">
+                    <label for="height">Altura: </label>
+                    <input type="number" id="height" step="0.01" placeholder="Digite sua altura" required>
+                </div>
+                <span>
+                    <button type="submit">Calcular</button>
+                </span>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
