@@ -21,9 +21,9 @@ const form = document.getElementById('imcForm');
 form.addEventListener('submit', function(event) {
     // Previne o envio padrão do formulário
     event.preventDefault();
-// let nome = prompt("Nome: ");//
 
 
+    // let nome = prompt("Nome: ");//
 let peso = parseFloat(document.getElementById('weight'));
 let altura = parseFloat(document.getElementById('height'))/100;
 let result = calcImc(peso, altura);
