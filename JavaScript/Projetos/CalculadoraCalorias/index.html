@@ -9,6 +9,7 @@
 <body>
     <form id="imcForm">
         <div class="box-calc">
+            <!-- <div class="cartao"> -->
             <div class="box-weight">
                 <!-- <label for="weight">Peso: </label> -->
                 <input type="number" id="weight" placeholder="Digite seu peso" required>
@@ -17,8 +18,15 @@
                 <!-- <label for="height">Altura: </label> -->
                 <input type="number" id="height" step="0.01" placeholder="Digite sua altura" required>
             </div>
-            <button id="btn-calcular" type="submit">Calcular</button>
-        </div>
+                <button id="btnCalcular" type="submit">Calcular</button>
+                
+                <span id="resultado"></span>
+                
+                <div class="tabela">
+                    <img src="https://jornalistasquecorrem.com.br/wp-content/uploads/2014/09/IMC-TABELA.jpg" width="" height="180">
+                </div>
+            <!-- </div> -->
+        </div> 
     </form>
 
     <script src="script.js"></script>
