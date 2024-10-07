@@ -18,8 +18,9 @@ body {
 }
 
 .box-calc {
+    padding-top: 1.5rem;
     height: 60%;
-    width: 70%;
+    width: 60%;
     background-color:beige;
     /* border: 1px solid black; */
     box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.295);
@@ -48,7 +49,7 @@ body {
 
 
 #height, #weight {
-    width: 100%;
+    width: 50%;
     height: 2rem;
     margin: 5px 0px 10px 0px;
     background-color: rgba(169, 169, 169, 0.479);
@@ -57,14 +58,14 @@ body {
     text-align: center;
 }
 
-
 #btnCalcular {
     background-color: dodgerblue;
     color: white;
-    width: 47%;
+    width: 50%;
     border: none;
     border-radius: 15px;
     padding: 0.5rem 3rem;
+    margin-top: 5px;
 }
 
 #resultado{
@@ -72,24 +73,6 @@ body {
     /* height: 20px;
     width: 20px;
     border: 1px black solid; */
-}
-
-#tabela { 
-    margin-top: 5rem;
-    /* border: 1px solid black;
-    padding: 15px; */
-}
-
-.tabela {
-    margin-top: 1rem;
-}
-
-img {
-    display: block;
-    -webkit-user-select: none;margin: auto;
-    cursor: zoom-in;
-    background-color: hsl(0, 0%, 90%);
-    transition: background-color 300ms; 
 }
 
 input[type="number"]::-webkit-outer-spin-button,
